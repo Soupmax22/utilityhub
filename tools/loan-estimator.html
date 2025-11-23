@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loan Estimator — UtilityHub Minimal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="nav"><a href="../index.html">Home</a></div>
+<h1>Loan Estimator</h1>
+<input type="number" id="amount" placeholder="Loan amount">
+<input type="number" id="rate" placeholder="Annual interest %">
+<input type="number" id="years" placeholder="Years">
+<button onclick="calcLoan()">Calculate</button>
+<p class="result" id="result"></p>
+<script>
+function calcLoan(){
+const P=parseFloat(document.getElementById('amount').value);
+const r=parseFloat(document.getElementById('rate').value)/100/12;
+const n=parseFloat(document.getElementById('years').value)*12;
+const M=(P*r)/(1-Math.pow(1+r,-n));
+document.getElementById('result').innerText="$"+M.toFixed(2)+" / month";
+}
+</script>
+</body>
+</html>
