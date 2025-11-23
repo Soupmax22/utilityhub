@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Time Duration — UtilityHub Minimal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="nav"><a href="../index.html">Home</a></div>
+<h1>Time Duration Calculator</h1>
+<input type="time" id="start">
+<input type="time" id="end">
+<button onclick="calcDuration()">Calculate</button>
+<p class="result" id="result"></p>
+<script>
+function calcDuration(){
+const s=document.getElementById('start').value.split(':');
+const e=document.getElementById('end').value.split(':');
+const diff=(parseInt(e[0])*60+parseInt(e[1]))-(parseInt(s[0])*60+parseInt(s[1]));
+document.getElementById('result').innerText=diff+" minutes";
+}
+</script>
+</body>
+</html>
