@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Split Bill — UtilityHub Minimal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="nav"><a href="../index.html">Home</a></div>
+<h1>Split Bill Calculator</h1>
+<input type="number" id="total" placeholder="Total bill">
+<input type="number" id="people" placeholder="Number of people">
+<button onclick="splitBill()">Calculate</button>
+<p class="result" id="result"></p>
+<script>
+function splitBill(){
+const t=parseFloat(document.getElementById('total').value);
+const p=parseInt(document.getElementById('people').value);
+document.getElementById('result').innerText="$"+(t/p).toFixed(2)+" per person";
+}
+</script>
+</body>
+</html>
