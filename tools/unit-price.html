@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unit Price Compare — UtilityHub Minimal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="nav"><a href="../index.html">Home</a></div>
+<h1>Unit Price Comparator</h1>
+<input type="number" id="price1" placeholder="Price 1">
+<input type="number" id="qty1" placeholder="Qty 1">
+<input type="number" id="price2" placeholder="Price 2">
+<input type="number" id="qty2" placeholder="Qty 2">
+<button onclick="compare()">Compare</button>
+<p class="result" id="result"></p>
+<script>
+function compare(){
+const u1=document.getElementById('price1').value/document.getElementById('qty1').value;
+const u2=document.getElementById('price2').value/document.getElementById('qty2').value;
+let winner=u1<u2?"Option 1 is cheaper":"Option 2 is cheaper";
+document.getElementById('result').innerText=winner;
+}
+</script>
+</body>
+</html>
