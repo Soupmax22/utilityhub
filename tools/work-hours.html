@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Work Hours Calculator — UtilityHub Minimal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="nav"><a href="../index.html">Home</a></div>
+<h1>Work Hours Calculator</h1>
+<input type="number" id="days" placeholder="Days worked">
+<input type="number" id="hours" placeholder="Hours per day">
+<button onclick="calcWork()">Calculate</button>
+<p class="result" id="result"></p>
+<script>
+function calcWork(){
+const total=document.getElementById('days').value*document.getElementById('hours').value;
+document.getElementById('result').innerText=total+" total hours";
+}
+</script>
+</body>
+</html>
