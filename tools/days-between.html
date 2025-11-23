@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Days Between Dates — UtilityHub Minimal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="nav"><a href="../index.html">Home</a></div>
+<h1>Days Between Dates</h1>
+<input type="date" id="date1">
+<input type="date" id="date2">
+<button onclick="calcDays()">Calculate</button>
+<p class="result" id="result"></p>
+<script>
+function calcDays(){
+const d1=new Date(document.getElementById('date1').value);
+const d2=new Date(document.getElementById('date2').value);
+if(!d1||!d2) return;
+const diff=Math.abs(d2-d1)/(1000*60*60*24);
+document.getElementById('result').innerText=Math.floor(diff)+" days";
+}
+</script>
+</body>
+</html>
