@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main pages -->
+  <url><loc>https://yourdomain.com/</loc></url>
+  <url><loc>https://yourdomain.com/about.html</loc></url>
+  <url><loc>https://yourdomain.com/privacy.html</loc></url>
+  <url><loc>https://yourdomain.com/terms.html</loc></url>
+  <url><loc>https://yourdomain.com/contact.html</loc></url>
+
+  <!-- Tools -->
+  <url><loc>https://yourdomain.com/tools/days-between.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/countdown.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/age-calculator.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/time-duration.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/work-hours.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/tip-calculator.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/split-bill.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/percentage-change.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/loan-estimator.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/unit-price.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/text-case.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/word-counter.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/remove-spaces.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/sort-list.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/remove-duplicates.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/random-number.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/name-picker.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/coin-flip.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/dice-roll.html</loc></url>
+  <url><loc>https://yourdomain.com/tools/wheel-picker.html</loc></url>
+
+</urlset>
