@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Word Counter — UtilityHub Minimal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="nav"><a href="../index.html">Home</a></div>
+<h1>Word Counter</h1>
+<textarea id="text" placeholder="Enter text"></textarea>
+<button onclick="countWords()">Count</button>
+<p class="result" id="result"></p>
+<script>
+function countWords(){
+let t=document.getElementById('text').value.trim();
+let c=t==""?0:t.split(/\s+/).length;
+document.getElementById('result').innerText=c+" words";
+}
+</script>
+</body>
+</html>
