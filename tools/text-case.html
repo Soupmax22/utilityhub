@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text Case Converter — UtilityHub Minimal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="nav"><a href="../index.html">Home</a></div>
+<h1>Text Case Converter</h1>
+<textarea id="text" placeholder="Enter text"></textarea>
+<select id="caseType">
+<option value="upper">UPPERCASE</option>
+<option value="lower">lowercase</option>
+<option value="title">Title Case</option>
+</select>
+<button onclick="convert()">Convert</button>
+<p class="result" id="result"></p>
+<script>
+function convert(){
+let t=document.getElementById('text').value;
+let type=document.getElementById('caseType').value;
+if(type=="upper") t=t.toUpperCase();
+else if(type=="lower") t=t.toLowerCase();
+else t=t.replace(/\w\S*/g, w=>w.charAt(0).toUpperCase()+w.substr(1).toLowerCase());
+document.getElementById('result').innerText=t;
+}
+</script>
+</body>
+</html>
