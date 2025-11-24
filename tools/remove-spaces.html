@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Remove Extra Spaces — UtilityHub Minimal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="nav"><a href="../index.html">Home</a></div>
+<h1>Remove Extra Spaces</h1>
+<textarea id="text" placeholder="Enter text"></textarea>
+<button onclick="removeSpaces()">Remove</button>
+<p class="result" id="result"></p>
+<script>
+function removeSpaces(){
+let t=document.getElementById('text').value;
+t=t.replace(/\s+/g,' ').trim();
+document.getElementById('result').innerText=t;
+}
+</script>
+</body>
+</html>
