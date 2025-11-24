@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sort List — UtilityHub Minimal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="nav"><a href="../index.html">Home</a></div>
+<h1>Sort List Alphabetically</h1>
+<textarea id="text" placeholder="Enter one item per line"></textarea>
+<button onclick="sortList()">Sort</button>
+<p class="result" id="result"></p>
+<script>
+function sortList(){
+let lines=document.getElementById('text').value.split('\n');
+lines.sort();
+document.getElementById('result').innerText=lines.join('\n');
+}
+</script>
+</body>
+</html>
